@@ -7,7 +7,8 @@ using DesafioPOO.Models;
 Iphone iphone1 = new Iphone(numero: "1234", modelo: "Teste", imei: "1234", memoria: 1234);
 Console.WriteLine("Smartphone Iphone:");
 iphone1.ReceberLigacao();
-iphone1.InstalarAplicativo("Nubank");
+Console.WriteLine("Digite o app que deseja baixar no Iphone:");
+iphone1.InstalarAplicativo(Console.ReadLine());
 
 Console.WriteLine("\n");
 
@@ -15,4 +16,5 @@ Console.WriteLine("\n");
 Nokia nokia1 = new Nokia(numero: "1234", modelo: "Teste", imei: "1234", memoria: 1234);
 Console.WriteLine("Smartphone Nokia:");
 nokia1.ReceberLigacao();
-nokia1.InstalarAplicativo("Instagram");
+Console.WriteLine("Digite o app que deseja baixar no Nokia:");
+nokia1.InstalarAplicativo(Console.ReadLine());
